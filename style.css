@@ -3,8 +3,13 @@ body {
  background-color: #cccccc;
  background-size: 100% ;
  background-repeat: no-repeat;
- 
+ color: #fff;
  font-family: 'Roboto', sans-serif;
+}
+
+.inline {
+    display: inline-block;
+    padding: 5px;
 }
 
 .carousel {
@@ -19,14 +24,24 @@ body {
     text-align: center;
 }
 
+#location {
+    font-size: 20px;
+}
+
 #time {
     font-size: 100px;
     font-weight: bold;
-    color: #fff;
 }
 
 #date {
     font-size: 20px;
     font-weight: bold;
-    color: #fff;
+}
+#actual-weather-temp {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#actual-weather-desc {
+    font-size: 20px;
 }
