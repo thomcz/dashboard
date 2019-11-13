@@ -1,10 +1,10 @@
-const appKey = "9c95291fb45642c7a4d5a64154d01206";
-const cityIdKarlsruhe = "2892794";
+const cityId = apiKeys.openWeather.cityId;
+const appKey = apiKeys.openWeather.apiKey;
 
 const ONE_HOUR = 3600000;
 
 const setActualWeather = async () => {
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?id=${cityIdKarlsruhe}&units=metric&lang=de&appid=${appKey}`);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=metric&lang=de&appid=${appKey}`);
     const actualWeather = await response.json(); //extract JSON from the http response
         
     const icon = actualWeather.weather[0].icon;
@@ -19,7 +19,7 @@ const setActualWeather = async () => {
 }
 
 const setForecastWeather = async () => {
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?id=${cityIdKarlsruhe}&units=metric&lang=de&appid=${appKey}`);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=metric&lang=de&appid=${appKey}`);
     const forecastWeather = await response.json(); //extract JSON from the http response
     
     for (let i = 0; i < 4; i++) {

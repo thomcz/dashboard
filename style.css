@@ -45,3 +45,18 @@ body {
 #actual-weather-desc {
     font-size: 20px;
 }
+
+#birthday-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#birthdays {
+    white-space: pre-wrap;
+    font-size: 20px;
+}
+
+#birthday-footer {
+    font-size: 20px;
+    font-weight: bold;
+}
